@@ -1,0 +1,570 @@
+# DevOps
+## organize differently
+- Orgainzation impact design
+- Meadsure what matters you get what you measure
+
+Introducing to DevOps
+	what are businesses up against?
+	Disruptive business models
+	Digization + business model
+	
+DevOps adoption
+
+Definition of DevOps
+	- what DevOps is not
+		Not simply comining fevelopement and operations
+		Not a separate team
+		Not a tool
+		Not one size fits all
+		Not just automation
+		
+Essential character in DevOps
+	- What is the goal
+	- How do you change a culture?
+		Must change the way people think
+		change the way people work
+		change the way people are organized 
+		change the way people are measured
+
+#Leading Up to DevOps
+
+* Describe the problem with the waterfall method
+* Describe the typical relateionship between software development and operations prior to DevOps
+
+## Waterfall development
+* Architects worked for month designing the system
+* Development worked for months on features
+* Testing openeddetects and sent the code back to development
+* At some point, the coed is released to operations
+* The operations team took forever to deploy
+Requirements-->Dsign-->Code-->Integration-->Test-->Deploy
+
+## Problem with Waterfall approach
+* No provisions for changing requirements
+* No idea if it works until the end
+* Each step ends when the next begins
+* Mistakes found in the later stages are more expensive to fix
+* There is usaually a long time between software releases
+* Teams work separately unaware of their impact on each other
+* The people who know the least about the code are deploying it into production
+
+## XP, Agile, and Beyond
+* 1996 Kent Beck introduced Extreme Programing
+* Based on an interactiive approach to software development
+* Intended to imrove software quality and responsiveness to changing customer requirements
+* One of the first Agile methods
+
+## The Agile Manifesto
+* Individuals and interactions over processes and tools
+* Working software over comprehensive documentation
+* Customer collaboration over contract negotiation
+* Responding to change over following a plan
+
+### shadow IT
+* Resources the business does not know about
+* People go around IT
+
+# A Brief history of DevOps
+## DevOps timeline
+* 2007 Patrick Debois
+* 2008 Andrew Clay Shafer - Agile Congerence 2009 Bof "Agile Infrastruture"
+* 2009 Velocity 10+ deploys per day
+* 2009 Oct - DevOpsDays: Patrick Debois started the first DevOpsDays conference Ghent, Belgium
+* 2010 contiunuous Delivery
+* 2013 The Phoenix Project: 
+* 2015 State of DevOps Report
+* 2016 The DevOps Handbook
+* 2019 10 years of DevOpsDays
+
+Congratulations! You have completed this lesson. At this point in the course, you know: 
+
+Technology is the enabler of innovation, rather than the driver of innovation. You must have an innovative business idea to leverage technology.
+
+In 2009, John Allspaw described an innovative approach to managing development and operations that enabled Flickr to complete over ten deploys per day, when many companies were completing fewer than one deploy every six months. This was a key moment in the growth of DevOps.
+
+DevOps is the practice of development and operation engineers working together during the entire development lifecycle, following Lean and Agile principles that allow them to deliver software in a rapid and continuous manner.
+
+DevOps is not it is not just Dev and Ops working together. It is a cultural change and a different way to work. DevOps has three dimensions: culture, methods, and tools. Of these, culture is the most important. 
+
+The essential characteristics of DevOps include cultural change, automated pipelines, infrastructure as code, immutable infrastructure, cloud native application design, the ecosystem of containers, and how to deploy with immutable infrastructure.
+
+DevOps started in 2007 when Patrick Debois and Andrew Clay Shafer began to gather like-minded people together at conferences to talk about common experiences.
+
+In 2009, Allspaw delivered his now famous “10+ Deploys Per Day – Dev and Ops Cooperation at Flickr” presentation and the idea gained ground. Also in 2009, Patrick Debois started a conference called DevOpsDays that helped spread the DevOps message.
+
+Books such as Continuous Delivery in 2011, The Phoenix Project in 2015, and The DevOps Handbook in 2016, helped practitioners understand how DevOps worked.
+
+The major influential people of the early DevOps movement: Patrick Debois, Andrew Clay Shafer, John Allspaw, Jez Humble, Gene Kim, John Willis, Bridget Kromhout, and Nicole Forsgren, went out and made a difference, showing the results that could be achieved with DevOps.
+
+The message spread from practitioner to practitioner until they began to realize what was possible with DevOps and that it was a better way to work.
+
+#Failure happens
+* Enbrace failure - they will happen
+* How to avoid --> How to identify and what to do about it
+* Operational concern --> develper concern
+* Plan to be throttled
+* Plan to be retry(with exponential backoff)
+* Defgrade gracefully
+* Cache when approriate
+
+## Retry pattern 
+
+## Bulkhead pattern
+
+## Chaos enineering
+* also know as money testin
+* You deliberately kill services
+* Netfglex created the simian Army tools
+* You cannot know how something will respond to a failure until it actually fails
+
+Social coding is coding as a community and public repositories and pair programming result in higher code quality. 
+
+Working in small batches reduces waste and means quickly delivering something useful to the customer. 
+
+Minimum viable product is as much about delivery as it is about building what the customer really desires. 
+
+Test driven development is writing the test for the code you wish you had, then writing the code to make the test pass. It allows you to develop faster and with more confidence.
+
+Behavior driven development focuses on the behavior of the system from the outside in. It looks at the system as a consumer of it. 
+
+Behavior driven development improves communication by using an approachable syntax that developers and stakeholders can understand. 
+
+Microservices are built around business capabilities and are independently deployable by fully automated deployment machinery.  
+
+Cloud native architecture enables independently deployable microservices that take advantage of horizontal scaling and result in more resilient services. 
+
+Failure is inevitable, so we design for failure rather than trying to avoid failure. 
+
+It is important to embrace failure and quickly recover when failures happen.  
+
+# Working DevOps
+* Culture of teaming and collaboration
+* Agile developement a s a shared discipline
+* Automate relentlessly
+* Push smaller releases faster
+
+## Industrial revolution
+
+# Understanding DevOps and Taylorism in Software Development
+
+After watching this video, you will be able to:
+- Recognize the benefits of working DevOps.
+- Describe how Taylorism is not beneficial for software development.
+- Recognize that software development is more like craftwork than factory work.
+
+## Changing Culture with DevOps
+
+- Working DevOps facilitates a culture of teaming and collaboration, echoing the Agile Manifesto.
+- It values individuals and interactions over processes and tools.
+- Establishing Agile development as a shared discipline is key to building a strong DevOps culture.
+- Relentless automation enables rapid DevOps responses, which is crucial although not the only aspect of DevOps.
+- Building a culture where manual tasks are frowned upon and automation is rewarded is essential.
+- Pushing smaller releases faster for quick feedback, risk minimization, and maximized learning is extremely important.
+
+## The Problem of Taylorism
+
+- Taylorism, named after Frederick Winslow Taylor, is a legacy of the industrial revolution.
+- Taylor's principles of large-scale manufacturing, including command-and-control management, dominate Western management methods.
+- He advocated for dividing organizations into independent functional silos and task-specific roles for efficiency.
+- This led to the assembly line concept where workers perform repetitive, specific tasks.
+- Taylorism leads to decision-making being separated from work, with managers planning and workers executing mindlessly.
+
+## Impact of Taylorism on IT and Project Management
+
+- Taylorism's influence is evident in IT, with project management at the command-and-control hierarchy's top.
+- The process involves architects designing systems, developers coding, testers testing, operations maintaining, and security ensuring safety.
+- Each group works in silos, leading to mistakes, lost context, and bottlenecks.
+- While this role optimization may work for car assembly lines, it's ineffective for software development.
+- Software development involves creating bespoke, often non-existent parts, unlike standard parts in automobile manufacturing.
+
+## Software Development as Craftwork
+
+- Software development is a form of "knowledge work" and "craftwork," creating unique applications.
+- Unlike mass production of automobiles, software development is about crafting a single, unique application.
+- The analogy of tooling up an entire assembly line for one product highlights the inappropriateness of factory-like methods in software development.
+
+## Moving Beyond Taylorism and Command-and-Control
+
+- Steve Jobs emphasized hiring smart people to guide us, not to be told what to do, highlighting the need for trust in employees' capabilities.
+- Effective management in DevOps involves setting goals and allowing teams the freedom to achieve them.
+- Abandoning command-and-control management and Taylorism is crucial for successful DevOps.
+- Teams need to work collaboratively with common goals, avoiding the slowdowns caused by siloed hand-offs.
+
+In this video, you learned that working DevOps involves pushing small releases quickly for feedback, risk management, and learning. Taylorism, suitable for factory work, is ill-suited for software development, which is akin to craftwork. The siloed handoffs in traditional project management result in inefficiencies and delays.
+
+
+# Software Engineering vs Civil Engineering
+
+After watching this video, you will be able to:
+
+- Recognize that software engineering is different from civil engineering.
+- Describe how software engineering is constantly changing.
+- Explain why the project management model does not work well for software development.
+
+## The Civil Engineering Approach
+
+In a civil engineering project, such as building an office, the process is linear and structured:
+
+1. **Design Phase**: An architect designs the building and creates a blueprint.
+2. **Construction Phase**: The blueprints are handed off to the construction team who follows them to build the building. Once this handoff is made, the architect moves on.
+3. **Maintenance Phase**: After construction, the building is maintained by a maintenance team. The structure remains largely static over time.
+
+## Software Engineering: An Organic Process
+
+However, treating software engineering efforts like civil engineering projects is problematic:
+
+- **Constant Changes**: The software stack and operating systems are constantly being updated, affecting the application.
+- **Ongoing Development**: Unlike buildings, software often requires the addition of new features and functionalities.
+- **Dynamic Behavior**: The behavior of software systems is continuously evolving.
+
+## The Project Model's Flaws in Software Development
+
+- **Lack of Ownership**: Once a project is complete, team members are reallocated, leading to a lack of ownership over the software.
+- **Misalignment with Software Nature**: Treating software engineering as a civil engineering project overlooks its organic and evolving nature.
+
+## Adopting a Product Development Approach in Software Engineering
+
+- **End-to-End Ownership**: The same team should build and maintain the software, fostering a deeper understanding and ownership of the code.
+- **Continuous Enhancement**: Like products, software should have long lives with continuous enhancements.
+
+## Conclusion
+
+- **DevOps Philosophy**: Stable, long-lasting team membership with end-to-end ownership is essential for creating great software.
+- **Shifting Perspective**: It's crucial to stop treating software engineering like civil engineering projects and more like dynamic, evolving product development.
+
+
+
+# Understanding DevOps vs Traditional Ops
+
+After watching this video, you will be able to:
+- Differentiate between traditional Ops and DevOps.
+- Describe ways Dev and Ops view each other.
+- List required DevOps behaviors.
+
+## DevOps and Traditional Enterprises
+
+- DevOps presents diametrically opposed views to how traditional enterprises think.
+- Enterprises built around end-to-end processes see "new" as complex, high risk, expensive, and time-consuming.
+- They approach new initiatives as fixed-time, fixed-budget projects and then move on to the next project.
+- DevOps seeks to deliver a continual series of small, manageable changes, breaking down big projects.
+- Smaller changes reduce the risk compared to large projects.
+- Small changes cannot survive the traditional overhead in enterprises.
+
+## Clash of Cultures
+
+- Traditional Ops involves manual configuration changes to critical infrastructure.
+- DevOps automates deployment to all environments.
+- Change review boards in traditional Ops contrast with the speed needed for small changes in DevOps.
+
+### Application Architectures and Network Design
+
+- Traditional Ops defines application architectures by network design.
+- DevOps defines network design by application architectures.
+- Software-defined networks in DevOps conform to the architecture's needs.
+
+### Infrastructure Approaches
+
+- Traditional Ops builds bespoke infrastructure once and maintains it forever.
+- DevOps creates ephemeral infrastructure for new deployments and doesn't maintain it, but replaces it entirely.
+- Automation is essential in DevOps to manage the infrastructure efficiently.
+
+## Managing Risk
+
+- Traditional Ops manages risk through change windows, limiting when changes can be made.
+- DevOps manages risk through progressive activation, allowing changes at any time.
+
+## Build and Maintenance
+
+- Traditional Ops has a "build once" bias, often with manual processes and long-term maintenance.
+- DevOps re-engineers processes for rapid changes and repeatable builds using Infrastructure as Code.
+
+## The Wall of Confusion
+
+- Development and Operations goals often oppose each other: innovation vs. stability.
+- The "wall of confusion" exists between Dev and Ops, as coined by Andrew Clay Shafer.
+- Breaking down this wall requires changing how development and operations view each other.
+
+## Development and Operations: Views of Each Other
+
+- Ops view of development: lack of testing, no back-out plans, and differences from production environments.
+- Development's view of Ops: all-or-nothing changes, lack of understanding of the code, reliance on outdated methods.
+
+## Silos and Apathy
+
+- Working in silos with opposing metrics breeds apathy and is counterproductive.
+- A unified set of metrics and goals is essential for collaboration and success.
+
+## Required DevOps Behaviors
+
+- Breaking down organizational silos and moving to a culture of shared ownership and high collaboration.
+- Embracing small, manageable changes to manage risk effectively.
+- Transitioning from unique, hand-crafted servers to ephemeral infrastructure using Infrastructure as Code for repeatability.
+- Moving from manual processes to automated self-service to enhance efficiency.
+- Shifting from traditional alarms and escalations to fast, data-driven feedback loops for proactive responses.
+
+# Understanding Infrastructure as Code, Ephemeral Infrastructure, and Immutable Delivery
+
+After watching this video, you will be able to:
+- Define infrastructure as code.
+- Describe ephemeral infrastructure.
+- Describe immutable delivery via containers.
+
+## Infrastructure as Code
+
+- Infrastructure as code is the practice of describing infrastructure in an executable textual format.
+- It is not just documentation but executable code.
+- Configuration management systems like Ansible, Puppet, and Chef are used to create and maintain infrastructure as described in code.
+- Manual system changes are error-prone and not reproducible; hence, using templates and scripts is essential.
+- Version control systems store the infrastructure code, providing a history and clarity on the latest version.
+
+## Ephemeral Infrastructure
+
+- The concept of infrastructure being ephemeral or transient is central to DevOps.
+- Traditional long-lasting infrastructure is replaced with short-lived, on-demand infrastructure.
+- Example: Test environments are built quickly and discarded after use, unlike the traditional approach of maintaining them for months.
+- This approach supports the idea of servers being "cattle, not pets" — they are disposable and replaceable.
+
+## Parallel Infrastructure and Server Drift
+
+- Parallel infrastructure allows for testing new versions alongside production without disruption.
+- Infrastructure as code helps avoid server drift, where servers diverge from their original configuration over time.
+- Ephemeral infrastructure means servers are built on demand and discarded after use, preventing long-term drift.
+
+## Immutable Delivery via Containers
+
+- Docker and similar tools facilitate immutable delivery, ensuring consistency and isolation in containers.
+- Dockerfiles define how to build images, ensuring consistency each time.
+- Containers provide development-production parity by packaging all dependencies.
+- Changes are made to the image, not running containers, ensuring consistency and easy roll-backs.
+- Containers are treated as disposable, and any changes or updates are made by replacing the container with a new one based on an updated image.
+
+In this video, you learned that infrastructure as code allows for defining infrastructure in an executable format. Ephemeral infrastructure emphasizes short-lived, on-demand resources, and immutable delivery through containers ensures consistency and ease of updates without directly modifying running instances.
+
+# Understanding Continuous Integration and Continuous Delivery (CI/CD)
+
+you will be able to:
+- Describe Continuous Integration (CI) and Continuous Delivery (CD).
+- Explain the reason for using small batches in Continuous Integration.
+- Describe the benefits of Continuous Integration.
+
+## Continuous Integration (CI)
+
+- CI is the practice of building, testing, and integrating changes continuously into the master branch.
+- It involves frequently integrating code into a shared repository, ideally on a daily basis.
+- Short-lived feature branches are merged into the master after completion, with each check-in verified by automated testing and build.
+- This process results in potentially deployable code after each set of tests pass.
+
+## Continuous Delivery (CD)
+
+- CD involves practices to ensure rapid and safe deployment of code to production-like environments.
+- It doesn't necessarily mean deployment into production but rather to an environment that mimics production.
+- Examples include development, test, or staging environments, especially if they mirror the production setup.
+
+## Traditional Development vs. CI/CD
+
+- Traditional development often uses long-lived branches, leading to merge conflicts and integration challenges.
+- CI encourages working in small batches and frequent commits to reduce conflicting changes and merge risks.
+- Automated testing and builds with each pull request help maintain code quality and readiness.
+
+## Benefits of Small Batches in CI
+
+- Small batches help to minimize the risk of merge conflicts.
+- Frequent commits allow for regular code review and communication among team members.
+- This practice ensures code quality and facilitates faster integration of changes.
+
+## Pull Requests and Testing in CI
+
+- Every pull request should be automatically built and tested.
+- CI tools like Travis CI, Circle CI, Jenkins, and GitHub Actions automate the build process and monitor version control systems for changes.
+- Automated tests confirm the code's behavior, and pull requests with failing tests should never be merged.
+
+## Advantages of Continuous Integration
+
+- CI allows for faster reaction to changes and quicker feature development due to automated tests.
+- It reduces the risk of code integration by handling smaller changes.
+- The practice ensures high code quality through collaborative reviews and testing.
+- The master branch remains constantly deployable, as untested code is never merged.
+
+In this video, you learned that CI involves building, testing, and integrating changes continuously, while CD ensures rapid and safe deployment to production-like environments. 
+Working in small batches is crucial for effective CI, reducing conflicts and risks.
+The benefits of CI include faster development, reduced integration risk, and maintaining high code quality.
+
+# Understanding CI/CD, Continuous Delivery, and DevOps Risk Management
+
+After watching this video, you will be able to:
+- Describe a CI/CD pipeline.
+- Define continuous delivery.
+- List the five key principles of continuous delivery.
+- Define continuous deployment.
+- Describe how DevOps manages risk.
+
+## Continuous Delivery Defined by Martin Fowler
+
+- Continuous Delivery is a software development discipline where you build software in such a way that it can be released to production at any time.
+- This implies that the master branch should always be deployable, necessitating building and testing every change.
+
+## Relationship Between CI and CD
+
+- Continuous Integration (CI) is required for Continuous Delivery (CD), as every change needs to be integrated and tested continuously.
+- CD extends CI by delivering every change to a production-like environment, not necessarily the actual production environment.
+
+## The CI/CD Pipeline
+
+- The CI/CD pipeline is a set of tools where the output of one feeds the input of another, involving various automated checks.
+- Key components include a code repository, build server, integration server/orchestrator, artifact repository, and automatic deployment tools.
+
+## Continuous Integration and Continuous Delivery in Software Development Lifecycle
+
+- Plan, code, build, and test are part of CI.
+- Release, deploy, and operate are part of CD.
+- These cycles feed into each other and are essential for effective software development.
+
+## Five Key Principles of Continuous Delivery
+
+1. **Built-in Quality**: Every code change goes through rigorous checks in the CI/CD pipeline to ensure high code quality.
+2. **Working in Small Batches**: Smaller changes are easier to test and represent less risk.
+3. **Automation of Repetitive Tasks**: Automate repetitive tasks and leave problem-solving to people.
+4. **Relentless Pursuit of Continuous Improvement**: Always look for improvement opportunities using actionable measurements.
+5. **Shared Responsibility**: Everyone is responsible for fixing broken builds to avoid holding back progress.
+
+## Continuous Deployment
+![CI/CD](https://i.imgur.com/Es4lbp2.png "CI/CD")
+
+- Continuous Deployment is reserved for deploying to production.
+- It involves automating deployment to production, distinguished from Continuous Delivery, which can deploy to non-production environments.
+
+## Managing Risk in DevOps
+
+- DevOps manages risk by increasing the rate of change, deploying early and often to build reliability.
+- Deployment is decoupled from activation using techniques like feature flags, blue-green deploys, canary testing, and zero downtime deployment.
+- Tailoring deployment techniques to fit the specific product and customer needs is crucial.
+
+In this video, you learned that CI/CD pipeline tools automate deployment, with release, deploy, and operate being part of CD. The principles of CD include quality, small batches, automation, continuous improvement, and shared responsibility. Continuous deployment automates deployment to production, and DevOps manages risk by embracing frequent changes.
+
+
+# Impact of Organizational Structure on DevOps
+
+After watching this video, you will be able to:
+- Identify how organizational structure impacts DevOps.
+- Explain Conway’s Law.
+- Describe the optimal organization for DevOps teams.
+
+## The Importance of Agile in DevOps
+
+- Embracing Agile is a fundamental part of becoming a DevOps organization.
+- Assess whether the culture of your organization truly embraces the Agile mindset.
+- Agile teams should be small, dedicated, cross-functional, and self-organized.
+
+## Conway’s Law
+
+- Melvin Conway stated that an organization's system design reflects its communication structure.
+- For example, the number of teams involved often determines the structure of the system they build.
+- This principle underlines the importance of organizing teams according to the desired architecture.
+
+## Organizing Teams in Traditional vs. DevOps Models
+![Organizing Teams in Traditional vs. DevOps Models](https://i.imgur.com/3voxS2H.png)
+- Traditionally, teams are organized by technology: a user interface team, application team, and database administrators’ team, leading to a three-tier architecture.
+- According to Conway’s Law, you get a structure that mirrors the organization's communication structure.
+
+## Optimal Organization for DevOps Teams
+![Optimal Organization for DevOps Teams](https://i.imgur.com/iCWkbFY.png)
+- Organize teams around business domains rather than technology.
+- Example teams include an account team for login and registration, a personalization team using AI, and a warehouse team for shipping and inventory.
+- Each team is small (5-7 engineers, no more than 10), cross-functional, and self-organizing, handling everything from front-end to back-end.
+
+## Aligning Teams with Business Domains
+
+- Each team should have a mission aligned with a business domain, functioning like a “mini start-up.”
+- Teams need autonomy and long-term missions to build ownership and pride in their work.
+- This approach enables teams to commit, build, deploy, maintain, and operate their services independently.
+
+## In this video, you learned that
+- for successful DevOps implementation, organizations must have small, dedicated, cross-functional, self-organizing teams.
+- Conway’s Law demonstrates that a company's design results reflect its communication structures.
+- Successful DevOps teams are organized around business domains, with each team having a mission aligned with a specific business area.
+
+
+# Understanding DevOps: Definition, Misconceptions, and Implementation
+
+After watching this video, you will be able to:
+- Define DevOps.
+- Identify misconceptions about DevOps.
+- Recognize the best approach for teams using DevOps.
+
+## Misunderstanding DevOps
+![perspective DevOps](https://i.imgur.com/5SolhSn.png)
+- DevOps is often misunderstood, exemplified by the confusion between job titles like "DevOps/Technical Ops" and "Software Developer/Engineer."
+- DevOps includes development ("Dev") and operations ("Ops"), implying that both aspects are integral.
+
+## The Incorrect Perspectives of DevOps
+
+- **DevOps as an Ops Subset**: Some organizations incorrectly view DevOps as a task solely for Ops teams.
+- **DevOps as a Developer’s Role**: Others perceive it as something only developers do.
+- **DevOps as a Separate Team**: A common misunderstanding is to think of DevOps as a separate team mediating between Dev and Ops.
+
+## The Correct Understanding of DevOps
+
+- DevOps is a mindset adopted by the entire organization, not confined to a single team or department.
+- It involves Dev and Ops working together, preferably on the same team, with unified goals and measurements.
+
+## DevOps and Organizational Culture
+
+- Start-ups often embody the DevOps culture, with Dev and Ops collaborating closely.
+- Jez Humble emphasized that creating a functional silo between Dev and Ops contradicts the principles of DevOps.
+
+## The 'Wall of Confusion'
+
+- The "wall of confusion" graphic by Andrew Clay Shafer highlights the conflicting goals of development (pushing new features) and operations (maintaining stability).
+- Forming a separate DevOps team only adds another layer of separation, which is counterproductive.
+
+## DevOps as Cultural Transformation
+
+- DevOps is not a job title or a specific team's role but a cultural shift across the organization.
+- It involves development and operations engineers collaboratively working through the software lifecycle.
+- DevOps is rooted in Lean and Agile principles, focusing on delivering high-quality, stable, and continuous software.
+
+## Embracing Cross-Functional Teams in DevOps
+
+- To truly practice DevOps, an organization must embrace cross-functional teams with openness, transparency, and trust.
+- DevOps is about breaking down silos and fostering a collaborative environment.
+
+In this video, you learned that DevOps is a mindset adopted by the entire organization, not just a specific role or team. It addresses the issues caused by siloed teams and promotes collaborative work between development and operations throughout the software lifecycle.
+
+
+# Impact of Organizational Structure on DevOps
+
+After watching this video, you will be able to:
+- Identify how organizational structure impacts DevOps.
+- Explain Conway’s Law.
+- Describe the optimal organization for DevOps teams.
+
+## The Importance of Agile in DevOps
+
+- Embracing Agile is a fundamental part of becoming a DevOps organization.
+- Assess whether the culture of your organization truly embraces the Agile mindset.
+- Agile teams should be small, dedicated, cross-functional, and self-organized.
+
+## Conway’s Law
+
+- Melvin Conway stated that an organization's system design reflects its communication structure.
+- For example, the number of teams involved often determines the structure of the system they build.
+- This principle underlines the importance of organizing teams according to the desired architecture.
+
+## Organizing Teams in Traditional vs. DevOps Models
+
+- Traditionally, teams are organized by technology: a user interface team, application team, and database administrators’ team, leading to a three-tier architecture.
+- According to Conway’s Law, you get a structure that mirrors the organization's communication structure.
+
+## Optimal Organization for DevOps Teams
+
+- Organize teams around business domains rather than technology.
+- Example teams include an account team for login and registration, a personalization team using AI, and a warehouse team for shipping and inventory.
+- Each team is small (5-7 engineers, no more than 10), cross-functional, and self-organizing, handling everything from front-end to back-end.
+
+## Aligning Teams with Business Domains
+
+- Each team should have a mission aligned with a business domain, functioning like a “mini start-up.”
+- Teams need autonomy and long-term missions to build ownership and pride in their work.
+- This approach enables teams to commit, build, deploy, maintain, and operate their services independently.
+
+In this video, you learned that for successful DevOps implementation, organizations must have small, dedicated, cross-functional, self-organizing teams. Conway’s Law demonstrates that a company's design results reflect its communication structures. Successful DevOps teams are organized around business domains, with each team having a mission aligned with a specific business area.

@@ -1,0 +1,53 @@
+# 瞭解網站可靠性工程（SRE）與 DevOps 的差異和共通點
+
+在這篇博客文章中，我們將探討網站可靠性工程（SRE）與 DevOps 之間的差異和共通點，並分析如何將它們一起使用來提高團隊效率。
+
+## SRE 與 DevOps 的差異
+
+- **SRE 定義**: SRE 是當軟件工程師負責運維工作時發生的事情。
+- **自動化的重要性**: SRE 專注於通過代碼自動化重複性任務。
+- **團隊結構的差異**: 與 DevOps 的跨功能團隊不同，SRE 維持獨立的開發和運營團隊。
+
+## SRE 的運作方式
+
+- **錯誤預算**: SRE 使用錯誤預算來控制穩定性，允許開發者在不超過錯誤預算的情況下部署應用。
+- **團隊人員配置**: SRE 和 DevOps 有不同的團隊配置方式，SRE 通過人員轉換來平衡開發和運營。
+
+## SRE 與 DevOps 的共通點
+
+- **共同目標**: 雖然實現方式不同，但 SRE 和 DevOps 都旨在加快軟件部署並保持穩定性。
+- **無責文化**: 兩種實踐都需要一種無責文化，鼓勵開放和誠實地討論如何改進。
+
+## 如何將 SRE 和 DevOps 結合使用
+
+- **基礎設施與應用維護**: 將 SRE 視為維護基礎設施的團隊，而 DevOps 則使用該基礎設施來維護他們的應用。
+- **雲環境中的角色**: 在雲環境中，SRE 運營雲服務，而 DevOps 消費雲服務。
+
+通過本篇博客，您學到了 SRE 與 DevOps 在方法和目標上的不同之處，以及它們如何共同作用於維護和使用計算基礎設施。
+
+# Understanding the Differences and Commonalities between Site Reliability Engineering and DevOps
+
+In this blog post, we delve into the differences and similarities between Site Reliability Engineering (SRE) and DevOps and analyze how they can be utilized together to enhance team efficiency.
+
+## Differences between SRE and DevOps
+
+- **Definition of SRE**: SRE occurs when a software engineer is tasked with what used to be called operations.
+- **Emphasis on Automation**: SRE focuses on automating repetitive tasks using Infrastructure as Code.
+- **Team Structure Variance**: Unlike the cross-functional teams in DevOps, SRE maintains separate development and operations teams.
+
+## How SRE Operates
+
+- **Error Budgets**: SRE uses error budgets to control stability, allowing developers to deploy as long as they do not exceed the set error budget.
+- **Staffing Pool Differences**: SRE and DevOps differ in team staffing, with SRE balancing development and operations by rotating personnel.
+
+## Commonalities between SRE and DevOps
+
+- **Shared Goals**: Despite different approaches, both SRE and DevOps aim to accelerate software deployment while maintaining stability.
+- **Blameless Culture**: Both practices require a blameless culture, encouraging open and honest discussions about improvement.
+
+## Integrating SRE with DevOps
+
+- **Infrastructure and Application Maintenance**: Consider SRE as the team maintaining infrastructure, while DevOps uses this infrastructure to maintain their applications.
+- **Roles in Cloud Environment**: In cloud environments, SRE operates the cloud services, while DevOps consumes these services.
+
+Through this blog post, you learned about the differing methodologies and objectives of SRE and DevOps, as well as how they can work together in maintaining and using computer infrastructure.

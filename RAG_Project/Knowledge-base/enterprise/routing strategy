@@ -1,0 +1,70 @@
+## 路由策略
+
+### 路由選擇原理
+
+#### 有類
+
+路由器中需要使用以下命令開啟
+
+```
+no ip classeless
+no ip cef
+```
+
+路由查找會先在存在的主類中查找，如果有該主類存在，則查找該主類下的子網路由，如果查找不到路由，則丟棄該封包。
+
+當主類不存在時，才會由預設路由出去。
+
+#### 無類
+
+無論主類存不存在，會查找每一條路由條目，匹配則出去，查無匹配才丟棄。
+
+### 路由表的查找
+
+* 不同的前綴，在路由表中屬於不同的路由
+* 相同的前綴，先比ad，後比metric
+* 匹配，轉發；不匹配，丟棄
+* 路由器的行為是逐跳的，到目標網路的沿路徑每個路由器都需要有目標的路由
+* 數據是雙向的，考慮流量的時候，要關注流量的往返。
+
+Passive-interface
+	RIP/IGRP 在指定接口不向外發送路由更新 但是接收路由更新
+	
+
+	EIGRP 在指定接口不向外發送hello消息 
+	而且通過這個接口布與其他路由器建立鄰接關係
+	
+	OSPF 在指定接口不向外發送hello消息 
+	而且通過這個接口布與其他路由器建立鄰接關係 布發送和接收路由信息
+	
+	confi-router# passive-interface inter-type int-num
+	passive-interface default   將所有接口設為被動接口
+	
+	no passive-interface 上連接口
+	
+	passive-interface與單播更新
+	rip 中
+	passive-interface int-type int-num
+	使用neighbor來指定單播更新路由
+
+控制管理距離
+	
+	修改AD值
+	設定ACL entry
+	OSPF
+	distance AD ip-src wildmask acls #法一
+	distance ospf external ad1 inter-area ad2 intra-area ad3 #法二
+	
+	EIGRP
+	distance AD ip-src wildmask acls   #法一
+	distance eigrp internal-distance external-distance #法二
+	
+	解決雙點雙向重分發:
+
+
+​	
+route-map
+
+distribute-list
+
+prefix-list
